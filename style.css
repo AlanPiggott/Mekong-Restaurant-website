@@ -1,0 +1,170 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, sans-serif, arial;
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  background-color: #23415c;
+  padding: 1% 0;
+  font-size: 1.2em;
+  position: fixed;
+}
+
+.navbar-brand {
+  min-height: 50px;
+  padding: 0 15px 5px;
+}
+.navbar-brand h1{
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav li a{
+  color: #D5D5D5
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active{
+  color: #FFF;
+}
+.navbar-default{
+   border:none;
+}
+
+#home{
+  background: url(images/test1.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.landing-text h1{
+  font-size: 500%;
+  font-weight: 700;
+  color: #FE621D;
+
+}
+
+.landing-text h3{
+  color: #FE621D;
+}
+
+.row img{
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.padding{
+  padding: 80px 0;
+}
+
+.padding img{
+  width: 100%;
+}
+
+.menu-text h1{
+  font-size: 60px;
+  float: left;
+}
+
+hr{
+  border-top: 7px solid #23415c;
+}
+
+#fixed {
+  background: url(images/scroll.jpg) no-repeat center center fixed;
+  display:table;
+  height: 60%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+footer{
+  padding-top: 20px;
+  width: 100%;
+  background-color: #23415c;
+  padding: 0 5% 2% 5%;
+  color: white; 
+}
+
+@media (max-width: 768px) {
+
+  .navbar{
+    padding-bottom: 20px;
+  }
+  .landing-text h1{
+    font-size: 300%;
+  }
+  .fa {
+    font-size: 20px;
+    padding: 10px;
+  }
+  #about img{
+    height: 75%;
+    width: 75%;
+  }
+}
+
+.menu-items {
+  width: 100%; 
+  padding: 50px 30px;
+  flex-flow: row ;
+  
+}
+
+.menu-item-body {
+  float: left; 
+  position: absolute;
+  overflow-x: hidden;
+  padding-left: 25px;
+  margin: 0 1%; 
+  width: 31%; 
+}
+.number {
+  position: absolute;
+  left: 0;
+}
+.name {
+  background-color: #fff; 
+}
+
+.name:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+}
+.price {
+  padding-left: 5px;
+  float: right !important;
+  background-color: #fff;
+}
+.description {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 10px;
+} 
+
+.container {
+  display: flex;
+}
+
+.container>* {
+  margin: 0 10px;
+  flex: 1;
+}
